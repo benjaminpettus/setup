@@ -1,7 +1,7 @@
 {
-  "name": "javascript-development-environment",
+  "name": "javascript-dev-environment",
   "version": "1.0.0",
-  "description": "JavaScript development environment Pluralsight course by Cory House",
+  "description": "JavaScript development environment",
   "scripts": {
     "prestart": "node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src",
@@ -10,7 +10,7 @@
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel"
   },
-  "author": "Cory House",
+  "author": "Benjamin Pettus",
   "license": "MIT",
   "dependencies": {
     "npm": "^6.4.1",
