@@ -2,6 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <% if (htmlWebpackPlugin.options.trackJSToken) {%>
+      <!-- Begin TrackJS -->
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      TrackJS.install({
+        token: "5a88160dd9f34791a86cfa7948e45587"
+        // for more configuration options, see https://docs.trackjs.com
+      });
+    </script>
+    <!-- End TrackJS -->
+    <% } %>
     <script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch"></script>
     <title>HI</title>
   </head>
